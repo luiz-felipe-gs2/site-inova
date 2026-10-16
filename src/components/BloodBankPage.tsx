@@ -99,10 +99,13 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         {/* 1. Seleção de doadores saudáveis */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-10 text-left">
           <h2 className="font-['Dosis',sans-serif] text-2xl sm:text-3xl font-bold text-[#541E87] mb-4 text-left">
-            #Meupetherói | Seleção de doadores saudáveis:
+            #MeuPetHerói | Seleção de Doadores Saudáveis
           </h2>
+          <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left mb-4">
+            Para garantir a segurança dos nossos doadores e receptores, os pets que atendem aos pré-requisitos para serem #PetHeróis passam por uma avaliação clínica, exames de sangue e acompanhamento da vacinação e da vermifugação.
+          </p>
           <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
-            Para garantir a segurança dos doadores e receptores, realizamos exames de sangue de check-up e avaliação clínica nos pets participantes, além do controle de vacinação e vermifugação de cada um dos nossos #PetHeróis (doadores).
+            Após a verificação dos critérios necessários, agendamos os exames para avaliar a saúde do pet e confirmar se ele está apto para a doação, garantindo mais segurança em todo o processo.
           </p>
         </section>
 
