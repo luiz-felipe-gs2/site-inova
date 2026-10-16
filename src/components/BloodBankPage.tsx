@@ -46,7 +46,7 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <h1 className="font-['Dosis',sans-serif] font-bold text-3xl sm:text-4xl md:text-5xl uppercase tracking-wide mb-4 [text-wrap:balance]">
-              Hemocentro Inova
+              Banco de Sangue Inova
             </h1>
 
             {/* Breve descrição sobre o banco de sangue da Inova no primeiro parágrafo do hero */}
@@ -62,8 +62,8 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         {/* Banner Image 1 */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
           <img
-            src="https://inovaveterinaria.com.br/wp-content/uploads/2024/07/BANCO-DE-SANGUE-INOVA-PET.png"
-            alt="Banco de Sangue Inova Pet"
+            src="/images/banco-de-sangue-banner.png?v=2"
+            alt="Banco de Sangue Inova Pet - #MeuPetHerói"
             loading="lazy"
             className="w-full h-auto rounded-xl shadow-xs mx-auto"
             referrerPolicy="no-referrer"
@@ -92,7 +92,7 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         {/* Introdução do Funcionamento */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-6 text-left">
           <p className="text-[#54595F] leading-relaxed text-base font-normal text-justify text-left">
-            Entenda como funciona os processos de seleção dos doadores, coleta e armazenamento do hemocentro para pets:
+            Entenda como funciona os processos de seleção dos doadores, coleta e armazenamento do banco de sangue para pets:
           </p>
         </section>
 

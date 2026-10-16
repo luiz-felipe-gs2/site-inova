@@ -65,7 +65,7 @@ const CLIENT_TESTIMONIALS: ClientTestimonial[] = [
     petSpecies: 'Shih Tzu',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=240',
     rating: 5,
-    service: 'Hemocentro Inova & Transfusão',
+    service: 'Banco de Sangue Inova & Transfusão',
     date: 'Atendimento recente',
     text: 'Meu cachorro precisou de uma transfusão de sangue urgente após uma complicação grave, e o Banco de Sangue próprio da Inova foi decisivo para que ele sobrevivesse. Saber que Sorocaba conta com um hospital 24h desse porte, com sangue triado e UTI completa de prontidão, traz uma tranquilidade indescritível.',
   },

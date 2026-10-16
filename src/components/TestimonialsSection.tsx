@@ -46,7 +46,7 @@ const TESTIMONIALS: Testimonial[] = [
     pet: 'Shih Tzu',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
     rating: 5,
-    text: 'Meu cachorro precisou de uma transfusão urgente e o Hemocentro da Inova foi decisivo. Saber que Sorocaba conta com um hospital 24h desse porte, com especialistas de prontidão e UTI completa, traz uma tranquilidade indescritível.',
+    text: 'Meu cachorro precisou de uma transfusão urgente e o Banco de Sangue da Inova foi decisivo. Saber que Sorocaba conta com um hospital 24h desse porte, com especialistas de prontidão e UTI completa, traz uma tranquilidade indescritível.',
   },
   {
     id: 5,
