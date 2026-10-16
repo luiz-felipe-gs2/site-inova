@@ -62,7 +62,7 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         {/* Banner Image 1 */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
           <img
-            src="/images/banco-de-sangue-banner.png?v=2"
+            src="/src/assets/images/regenerated_image_1792176970999.jpg"
             alt="Banco de Sangue Inova Pet - #MeuPetHerói"
             loading="lazy"
             className="w-full h-auto rounded-xl shadow-xs mx-auto"
@@ -162,7 +162,7 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         {/* Tirinha Informativa */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-12 text-center">
           <img
-            src="https://inovaveterinaria.com.br/wp-content/uploads/2024/07/Banco-de-Sangue-Tirinha-para-site-768x225.png"
+            src="/src/assets/images/regenerated_image_1792176972365.png"
             alt="Banco de Sangue Tirinha para site"
             loading="lazy"
             className="w-full max-w-2xl mx-auto h-auto rounded-lg shadow-xs"
