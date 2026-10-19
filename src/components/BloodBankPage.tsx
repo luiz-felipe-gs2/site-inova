@@ -62,7 +62,7 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         {/* Banner Image 1 */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
           <img
-            src="/src/assets/images/regenerated_image_1792177581026.png"
+            src="/images/imgs_new/banner_superior_banco.png"
             alt="Banco de Sangue Inova Pet - #MeuPetHerói"
             loading="lazy"
             className="w-full h-auto rounded-xl shadow-xs mx-auto"
