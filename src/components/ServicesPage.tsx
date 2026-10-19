@@ -207,7 +207,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
                 Estrutura Completa para Cuidar do Seu Pet
               </h2>
               <p className="text-white/90 text-sm sm:text-base leading-relaxed max-w-2xl">
-                O Hospital Veterinário Inova opera 24 horas por dia na Unidade Nogueira Padilha com centro cirúrgico completo, UTI, diagnóstico por imagem e laboratório próprio. Consultas especializadas com hora marcada acontecem em nossa Clínica Campolim.
+                A INOVA Hospital Veterinário está aberta 24 horas por dia na Unidade Nogueira Padilha com centro cirúrgico completo, UTI, diagnóstico por imagem e laboratório próprio. Consultas especializadas com hora marcada acontecem em nossas unidades: Inova Unidade Campolim e Inova Unidade Nogueira Padilha.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 text-xs sm:text-sm text-white/90">

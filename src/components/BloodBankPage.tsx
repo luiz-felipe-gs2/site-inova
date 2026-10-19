@@ -122,30 +122,55 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         {/* 3. Processamento */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-10 text-left">
           <h2 className="font-['Dosis',sans-serif] text-2xl sm:text-3xl font-bold text-[#541E87] mb-4 text-left">
-            Processamento:
+            Processamento
           </h2>
+          <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left mb-4">
+            Em nosso Banco de Sangue, cada bolsa de sangue coletada pode ser processada e separada em até três tipos de hemocomponentes: Sangue Total, Concentrado de Hemácias e Plasma.
+          </p>
           <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
-            Em nosso Banco de Sangue, uma bolsa de sangue coletada pode ser separada em 3 tipos hemocomponentes: sangue total, concentrado de hemácias e plasma. Para isso, contamos com profissionais especializados e equipamentos de última geração garantindo a melhor qualidade dos hemocomponentes separados.
+            Contamos com uma equipe especializada e equipamentos de alta tecnologia para garantir um processamento seguro, eficiente e com máxima qualidade dos hemocomponentes.
           </p>
         </section>
 
-        {/* 4. O armazenamento */}
+        {/* 4. Armazenamento */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-10 text-left">
           <h2 className="font-['Dosis',sans-serif] text-2xl sm:text-3xl font-bold text-[#541E87] mb-4 text-left">
-            O armazenamento:
+            Armazenamento
           </h2>
+          <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left mb-4">
+            O Banco de Sangue INOVA dispõe de geladeira hematoimuno individual e freezer exclusivo para o armazenamento dos hemocomponentes.
+          </p>
           <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
-            O Banco de Sangue INOVA conta com uma geladeira Hematoimuno individual e um freezer específico para armazenamento dos hemocomponentes, garantindo a melhor conservação e controle da temperatura das bolsas de sangue.
+            Esses equipamentos permitem o controle rigoroso da temperatura e das condições de conservação, contribuindo para a qualidade, segurança e integridade das bolsas de sangue.
           </p>
         </section>
 
-        {/* 5. Controle de Qualidade */}
+        {/* 5. Tipagem Sanguínea: Mais Segurança na Transfusão */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-10 text-left">
+          <h2 className="font-['Dosis',sans-serif] text-2xl sm:text-3xl font-bold text-[#541E87] mb-4 text-left">
+            Tipagem Sanguínea: Mais Segurança na Transfusão
+          </h2>
+          <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left mb-4">
+            Como diferencial de segurança transfusional, todas as bolsas coletadas são tipadas, permitindo a identificação do tipo sanguíneo do doador.
+          </p>
+          <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
+            Esse cuidado contribui para uma transfusão mais segura e adequada às necessidades de cada paciente, reforçando nosso compromisso com a qualidade dos hemocomponentes e a segurança transfusional.
+          </p>
+        </section>
+
+        {/* 6. Controle de Qualidade */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-10 text-left">
           <h2 className="font-['Dosis',sans-serif] text-2xl sm:text-3xl font-bold text-[#541E87] mb-4 text-left">
             Controle de Qualidade
           </h2>
+          <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left mb-4">
+            A segurança e a qualidade dos hemocomponentes fornecidos pelo Banco de Sangue INOVA são prioridades em nosso trabalho.
+          </p>
+          <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left mb-4">
+            Por isso, seguimos rigorosos processos de controle e monitoramento da qualidade, garantindo que os hemocomponentes estejam adequados para atender, com segurança, às necessidades dos nossos #PetHeróis — doadores e receptores.
+          </p>
           <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left mb-6">
-            A segurança dos componentes sanguíneos fornecidos pelo Banco de Sangue INOVA constitui a nossa principal preocupação a par do bem-estar dos #PetHeróis (doadores) e receptores. Conheça nossa cartilha de Controle de Qualidade.
+            Conheça nossa Cartilha de Controle de Qualidade e saiba mais sobre os cuidados e processos que fazem parte do nosso compromisso com a segurança transfusional.
           </p>
 
           <div className="pt-2">
