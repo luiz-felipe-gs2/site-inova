@@ -248,7 +248,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             </h1>
 
             <p className="text-white/90 text-base sm:text-lg leading-relaxed font-normal max-w-2xl [text-wrap:balance]">
-              Preencha os seus dados e entramos em contato, ou fale diretamente com a equipe do Inova Hospital Veterinário 24h pelos canais de pronto&nbsp;atendimento.
+              Preencha os seus dados e entramos em contato, ou fale diretamente com a equipe da Inova Hospital Veterinário 24h pelos canais de pronto atendimento.
             </p>
           </div>
         </div>
@@ -282,12 +282,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             <div>
               <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider block">WhatsApp Oficial</span>
               <a
-                href="https://wa.me/5515997976055"
+                href="https://wa.me/551533332300"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-['Dosis',sans-serif] font-bold text-lg text-[#282828] hover:text-emerald-700 transition-colors"
               >
-                (15) 99797-6055
+                (15) 3333-2300
               </a>
               <p className="text-xs text-slate-500 mt-0.5">Dúvidas e agendamentos</p>
             </div>
@@ -315,10 +315,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             <div>
               <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider block">Trabalhe Conosco</span>
               <a
-                href="mailto:hospitalinova@graphorh.com.br"
+                href="mailto:inovarh@inovaveterinaria.com.br"
                 className="font-semibold text-xs sm:text-sm text-[#541E87] hover:underline break-all block"
               >
-                hospitalinova@graphorh.com.br
+                inovarh@inovaveterinaria.com.br
               </a>
               <p className="text-[11px] text-slate-400 mt-0.5">Envie seu currículo</p>
             </div>
@@ -482,8 +482,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                     className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm text-slate-800 focus:bg-white focus:ring-2 focus:ring-[#541E87] focus:border-[#541E87] outline-hidden transition-all"
                   >
                     <option value="" disabled>Selecione</option>
-                    <option value="Hospital 24h – Unidade Nogueira Padilha">Hospital 24h – Unidade Nogueira Padilha</option>
-                    <option value="Clínica de Especialidades – Unidade Campolim">Clínica de Especialidades – Unidade Campolim</option>
+                    <option value="INOVA Unidade Nogueira Padilha">INOVA Unidade Nogueira Padilha</option>
+                    <option value="INOVA Unidade Campolim">INOVA Unidade Campolim</option>
                   </select>
                 </div>
 
