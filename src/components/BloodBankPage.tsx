@@ -112,10 +112,10 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         {/* 2. Cuidados na coleta de sangue */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-10 text-left">
           <h2 className="font-['Dosis',sans-serif] text-2xl sm:text-3xl font-bold text-[#541E87] mb-4 text-left">
-            Cuidados na coleta de sangue:
+            Cuidado e conforto durante a coleta
           </h2>
           <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
-            Preparamos o ambiente para evitar o estresse e desconforto do #PetHerói (doador) durante a coleta e, se necessário, temos uma equipe qualificada e preparada para dar todo o suporte para que seja feita a sedação para segurança do #PetHerói (doador).
+            O bem-estar do #PetHerói (doador) é nossa prioridade. Preparamos um ambiente tranquilo e contamos com uma equipe capacitada para tornar o momento da doação o mais seguro, confortável e acolhedor possível.
           </p>
         </section>
 
@@ -165,10 +165,10 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
         {/* Tirinha Informativa */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-12 text-center">
           <img
-            src="/src/assets/images/regenerated_image_1792176972365.png"
-            alt="Banco de Sangue Tirinha para site"
+            src="/images/imgs_new/banner_inferior_banco.png"
+            alt="Banco de Sangue - Banner Informativo"
             loading="lazy"
-            className="w-full max-w-2xl mx-auto h-auto rounded-lg shadow-xs"
+            className="w-full max-w-4xl mx-auto h-auto rounded-lg shadow-xs"
             referrerPolicy="no-referrer"
           />
         </section>
