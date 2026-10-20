@@ -275,6 +275,90 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
           </div>
         </section>
 
+        {/* O que oferecemos aos pets doadores */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-12 text-left">
+          <h2 className="font-['Dosis',sans-serif] text-2xl sm:text-3xl font-bold text-[#541E87] mb-4 text-left uppercase">
+            O que oferecemos aos pets doadores
+          </h2>
+          <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left mb-8">
+            Ser um doador de sangue é um gesto de solidariedade que também contribui para a medicina preventiva. Mesmo quando o pet aparenta estar saudável, o acompanhamento veterinário e a realização de exames periódicos permitem monitorar sua saúde e identificar possíveis alterações precocemente.
+          </p>
+
+          <div className="space-y-6">
+            {/* 1. Exames laboratoriais completos */}
+            <div className="bg-slate-50/80 border border-slate-200/80 rounded-xl p-6 sm:p-7 shadow-xs">
+              <h3 className="font-['Dosis',sans-serif] text-xl sm:text-2xl font-bold text-[#541E87] mb-3">
+                Exames laboratoriais completos
+              </h3>
+              <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-left mb-4">
+                Realizamos exames periódicos para acompanhamento da saúde dos nossos doadores, incluindo:
+              </p>
+              <div className="pl-1">
+                <p className="font-semibold text-slate-800 text-sm sm:text-base mb-2.5">
+                  Para cães:
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[#54595F] text-base leading-relaxed">
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#A7CD4E] font-bold">•</span>
+                    <span>ASA 2</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#A7CD4E] font-bold">•</span>
+                    <span>Leishmaniose (Leish)</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#A7CD4E] font-bold">•</span>
+                    <span>4DX</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#A7CD4E] font-bold">•</span>
+                    <span>Hemograma (Hemo)</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#A7CD4E] font-bold">•</span>
+                    <span>Creatinina (Creat)</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#A7CD4E] font-bold">•</span>
+                    <span>Ureia</span>
+                  </li>
+                  <li className="flex items-center gap-2 sm:col-span-2">
+                    <span className="text-[#A7CD4E] font-bold">•</span>
+                    <span>Tipagem sanguínea</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* 2. Vacinação anual gratuita */}
+            <div className="bg-slate-50/80 border border-slate-200/80 rounded-xl p-6 sm:p-7 shadow-xs">
+              <h3 className="font-['Dosis',sans-serif] text-xl sm:text-2xl font-bold text-[#541E87] mb-3">
+                Vacinação anual gratuita
+              </h3>
+              <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
+                Mantemos a vacinação dos nossos doadores em dia, incluindo as vacinas V7/V10 e antirrábica para cães, conforme o protocolo veterinário recomendado.
+              </p>
+            </div>
+
+            {/* 3. Monitoramento contínuo */}
+            <div className="bg-slate-50/80 border border-slate-200/80 rounded-xl p-6 sm:p-7 shadow-xs">
+              <h3 className="font-['Dosis',sans-serif] text-xl sm:text-2xl font-bold text-[#541E87] mb-3">
+                Monitoramento contínuo
+              </h3>
+              <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
+                Os pets doadores contam com acompanhamento periódico da nossa equipe de médicos-veterinários, com controle de saúde e acompanhamento durante todo o período em que participarem do programa de doação.
+              </p>
+            </div>
+
+            {/* Cuidar de quem ajuda a salvar vidas também faz parte da nossa missão */}
+            <div className="p-5 sm:p-6 bg-gradient-to-r from-purple-50 to-emerald-50/50 border-l-4 border-[#541E87] rounded-r-xl shadow-xs">
+              <p className="text-[#541E87] font-semibold text-base sm:text-lg italic font-['Dosis',sans-serif]">
+                Cuidar de quem ajuda a salvar vidas também faz parte da nossa missão.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Faixa e Seção: #MEUPETHERÓI | CADASTRE SEU PET PARA SALVAR VIDAS */}
         <section className="bg-[#541E87] py-8 my-10 shadow-xs">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
