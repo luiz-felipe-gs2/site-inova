@@ -26,7 +26,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onCl
   };
 
   const handleSendWhatsapp = () => {
-    const unitName = unit === 'campolim' ? 'Unidade Campolim' : 'Unidade Nogueira Padilha';
+    const unitName = unit === 'campolim' ? 'INOVA Unidade Campolim' : 'INOVA Unidade Nogueira Padilha';
     const message = `Olá Inova! Gostaria de agendar uma consulta para meu pet:\n- Tutor: ${tutorName || 'Não informado'}\n- Pet: ${petName || 'Não informado'} (${petType})\n- Unidade: ${unitName}\n- Especialidade: ${specialty}\n- Data sugerida: ${preferredDate || 'A combinar'} (${period})`;
     const encoded = encodeURIComponent(message);
     window.open(`https://wa.me/551533332300?text=${encoded}`, '_blank');
@@ -73,7 +73,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onCl
                         : 'border-slate-200 text-slate-700 hover:border-slate-300'
                     }`}
                   >
-                    <p className="font-bold">Unidade Campolim</p>
+                    <p className="font-bold">INOVA Unidade Campolim</p>
                     <p className="text-[11px] opacity-80">24h / Especialidades</p>
                   </button>
                   <button
@@ -85,7 +85,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onCl
                         : 'border-slate-200 text-slate-700 hover:border-slate-300'
                     }`}
                   >
-                    <p className="font-bold">Unidade Nogueira Padilha</p>
+                    <p className="font-bold">INOVA Unidade Nogueira Padilha</p>
                     <p className="text-[11px] opacity-80">Clínica Geral</p>
                   </button>
                 </div>

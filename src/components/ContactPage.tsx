@@ -546,7 +546,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                 <span className="bg-[#541E87] text-white text-[11px] font-black uppercase px-2 py-0.5 rounded">
                   Hospital 24h
                 </span>
-                <span className="text-xs font-bold text-[#541E87]">Unidade Nogueira Padilha</span>
+                <span className="text-xs font-bold text-[#541E87]">INOVA Unidade Nogueira Padilha</span>
               </div>
 
               <h3 className="font-['Dosis',sans-serif] font-bold text-xl uppercase text-[#282828] mb-2">
@@ -587,7 +587,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                 <span className="bg-[#FAAE00] text-[#282828] text-[11px] font-black uppercase px-2 py-0.5 rounded">
                   Clínica
                 </span>
-                <span className="text-xs font-bold text-slate-700">Unidade Campolim</span>
+                <span className="text-xs font-bold text-slate-700">INOVA Unidade Campolim</span>
               </div>
 
               <h3 className="font-['Dosis',sans-serif] font-bold text-xl uppercase text-[#282828] mb-2">

@@ -233,7 +233,7 @@ export const SpecialtiesPage: React.FC<SpecialtiesPageProps> = ({
                 <div className="p-4 bg-white/10 rounded-xl border border-white/10 backdrop-blur-xs">
                   <div className="flex items-center gap-2 mb-1.5 text-[#FAAE00] font-bold font-['Dosis',sans-serif] text-sm uppercase">
                     <MapPin className="w-4 h-4" />
-                    <span>Unidade Nogueira Padilha</span>
+                    <span>INOVA Unidade Nogueira Padilha</span>
                   </div>
                   <p className="text-white/90 text-xs">
                     Rua Cel. Nogueira Padilha, 1770 – Vila Hortência
@@ -249,7 +249,7 @@ export const SpecialtiesPage: React.FC<SpecialtiesPageProps> = ({
                 <div className="p-4 bg-white/10 rounded-xl border border-white/10 backdrop-blur-xs">
                   <div className="flex items-center gap-2 mb-1.5 text-[#FAAE00] font-bold font-['Dosis',sans-serif] text-sm uppercase">
                     <MapPin className="w-4 h-4" />
-                    <span>Unidade Campolim</span>
+                    <span>INOVA Unidade Campolim</span>
                   </div>
                   <p className="text-white/90 text-xs">
                     Av. Gisele Constantino, 1495 – Parque Campolim

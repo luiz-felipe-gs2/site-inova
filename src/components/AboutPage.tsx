@@ -121,7 +121,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
 
               <div className="space-y-2 pt-1 text-left">
                 <h4 className="text-lg font-bold text-[#282828] text-left">
-                  🚩 Unidade Nogueira Padilha:
+                  🚩 INOVA Unidade Nogueira Padilha:
                 </h4>
                 <h5 className="text-base font-bold text-[#541E87] text-left">
                   &gt; Hospital 24h e Clínica de Especialidades
@@ -136,7 +136,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
 
               <div className="space-y-2 pt-2 text-left">
                 <h4 className="text-lg font-bold text-[#282828] text-left">
-                  🚩 Unidade Campolim:
+                  🚩 INOVA Unidade Campolim:
                 </h4>
                 <h5 className="text-base font-bold text-[#541E87] text-left">
                   &gt; Clínica de Vacinas e Especialidades

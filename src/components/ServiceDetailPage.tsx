@@ -29,9 +29,13 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [service.id]);
 
-  // Clean and enhance content HTML to ensure images load safely and styles look unified
+  // Clean and enhance content HTML to ensure team sections are kept solely on /vets
   const formatContentHtml = (rawHtml: string) => {
-    return rawHtml
+    const withoutTeam = rawHtml
+      .replace(/(?:<div style=[^>]*class="wp-block-spacer"[^>]*><\/div>\s*)?<h[234][^>]*>(?:<mark[^>]*>)?(?:<strong>)*(?:Conheça nossa equipe|Equipe|Veterinária[s]?\s+Responsável|Diretora\s+Clínica\s+Responsável|Líder\s+Técnica).*?<\/h[234]>\s*(?:<h3[^>]*>Veterinárias Responsáveis<\/h3>\s*)?(?:(?!<h[1234]|<figure|<div\s+role|<div\s+class="wp-block-columns|<div\s+class="wp-block-button|<div\s+class="wp-block-buttons).)*?(?=<\/div>\s*$|<h[1234]|<figure|<div\s+role|<div\s+class="wp-block-columns|<div\s+class="wp-block-button|<div\s+class="wp-block-buttons|$)/gis, '')
+      .replace(/<p[^>]*>(?:<strong>)*(?:Veterinária[s]?\s+Responsável:|Equipe\s+de\s+).*?<\/p>(?:(?!<h[1234]|<figure|<div\s+role|<div\s+class="wp-block-columns|<div\s+class="wp-block-button|<div\s+class="wp-block-buttons|<div>\s*<p>Consultas agendadas).)*?(?=<\/div>\s*$|<h[1234]|<figure|<div\s+role|<div\s+class="wp-block-columns|<div\s+class="wp-block-button|<div\s+class="wp-block-buttons|<div>\s*<p>Consultas agendadas|$)/gis, '');
+
+    return withoutTeam
       .replace(/<img /g, '<img referrerpolicy="no-referrer" loading="lazy" class="rounded-xl shadow-xs mx-auto my-6 max-w-full h-auto" ')
       .replace(/<a /g, '<a target="_blank" rel="noopener noreferrer" class="text-[#541E87] hover:text-[#A400EB] underline font-medium" ');
   };
