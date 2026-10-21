@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowLeft, MapPin, Play } from 'lucide-react';
 
 interface AboutPageProps {
   onBackToHome?: () => void;
@@ -8,6 +8,18 @@ interface AboutPageProps {
   onNavigateToVets?: () => void;
   onNavigateToContact?: () => void;
 }
+
+const TIMELINE_EVENTS = [
+  { year: '2012', title: 'Nasce a Inova' },
+  { year: '2015', title: 'Novo endereço da INOVA Unidade Nogueira Padilha' },
+  { year: '2017', title: 'Hospital 24h' },
+  { year: '2018', title: 'Ampliação do estacionamento e Espaço Integra' },
+  { year: '2020', title: 'Inauguração da Clínica de Especialidades - Nogueira Padilha' },
+  { year: '2021', title: 'Inauguração da INOVA Unidade Campolim' },
+  { year: '2022', title: 'Parceria com a Prime Tomografia Veterinária' },
+  { year: '2023', title: 'Inauguração da UTI Veterinária' },
+  { year: '2024', title: 'Lançamento do INOVET - Centro de Educação Veterinária' },
+];
 
 const CAROUSEL_IMAGES = [
   {
@@ -97,12 +109,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
             </h2>
 
             <p className="text-white/95 text-base sm:text-lg leading-relaxed font-normal text-justify text-left [text-wrap:balance]">
-              Nascemos com a missão de promover a <strong>saúde</strong> e{' '}
-              <strong>bem-estar</strong> para nossos <strong>pacientes</strong>, transmitindo
-              segurança aos <strong>tutores.</strong> Oferecemos a mais elevada{' '}
-              <strong>competência técnica</strong> do corpo clínico e corpo de apoio. Um{' '}
-              <strong>atendimento de excelência</strong> e <strong>medicina humanizada</strong>{' '}
-              aos pacientes e tutores.
+              Nascemos com a missão de promover a <strong>saúde</strong> e <strong>bem-estar</strong> dos <strong>pets</strong>, <strong>encantamento</strong> e a <strong>cura</strong> da <strong>família</strong>, por meio de elevada <strong>competência técnica</strong> do <strong>corpo clínico</strong> e <strong>corpo de apoio</strong>, entregando uma <strong>medicina humanizada</strong> e de <strong>excelência</strong>.
             </p>
           </div>
         </div>
@@ -110,49 +117,52 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
 
       {/* Main Container */}
       <div className="py-10 md:py-14">
-        {/* Section 2: Unidades de atendimento e Mídia (Vídeo e Carrossel) */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        {/* Section 2: Unidades de atendimento, Mídia e Linha do Tempo */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
             {/* Left Column: Unidades de atendimento */}
-            <div className="lg:col-span-6 space-y-6 text-[#54595F] text-base leading-[2.2em] text-justify text-left">
-              <p className="text-base sm:text-lg font-medium text-[#282828] text-left">
-                Contamos com 2 unidades para atendimento:
-              </p>
+            <div className="lg:col-span-6 space-y-6 text-[#54595F] text-base text-left">
+              <h3 className="font-['Dosis',sans-serif] font-bold text-2xl sm:text-3xl text-[#541E87] uppercase tracking-wide leading-tight mb-4 text-left">
+                Em 2 unidades para o melhor atendimento para o seu pet:
+              </h3>
 
-              <div className="space-y-2 pt-1 text-left">
-                <h4 className="text-lg font-bold text-[#282828] text-left">
-                  🚩 INOVA Unidade Nogueira Padilha:
-                </h4>
-                <h5 className="text-base font-bold text-[#541E87] text-left">
-                  &gt; Hospital 24h e Clínica de Especialidades
-                </h5>
-                <p className="text-justify text-left pt-1">
-                  Consultórios disponíveis para atendimento emergencial e de rotina, centro
-                  cirurgico geral, odontológico e centro de videocirurgia e endoscopia, internação
-                  e UTI, laboratório, centro de reabilitação e exames de imagem (raio-x e
-                  ultrassonografia).
-                </p>
-              </div>
+              <div className="space-y-4 pt-1 text-left">
+                <div className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:border-[#541E87]/40 transition-all text-left">
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="w-5 h-5 text-[#541E87] shrink-0" />
+                    <h4 className="text-lg sm:text-xl font-bold text-[#282828] font-['Dosis',sans-serif] uppercase tracking-wide">
+                      INOVA Unidade Nogueira Padilha
+                    </h4>
+                  </div>
+                  <h5 className="text-sm sm:text-base font-bold text-[#541E87] mb-2 font-['Dosis',sans-serif] uppercase">
+                    &gt; Hospital 24h e Clínica de Especialidades
+                  </h5>
+                  <p className="text-[#54595F] text-sm sm:text-base leading-relaxed text-justify">
+                    Consultórios disponíveis para atendimento emergencial e de rotina, centro cirúrgico geral, centro odontológico e centro de videocirurgia e endoscopia, internação e UTI, laboratório e exames de imagem (raio-x e ultrassonografia).
+                  </p>
+                </div>
 
-              <div className="space-y-2 pt-2 text-left">
-                <h4 className="text-lg font-bold text-[#282828] text-left">
-                  🚩 INOVA Unidade Campolim:
-                </h4>
-                <h5 className="text-base font-bold text-[#541E87] text-left">
-                  &gt; Clínica de Vacinas e Especialidades
-                </h5>
-                <p className="text-justify text-left pt-1">
-                  A 1ª clínica veterinária de Sorocaba especializada em vacinas, consultórios para
-                  atendimento de consultas de rotina com Clínico Geral e Especialidades, exames de
-                  imagem, exames cardiológicos, centro de reabilitação e muito mais.
-                </p>
+                <div className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:border-[#541E87]/40 transition-all text-left">
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="w-5 h-5 text-[#FAAE00] shrink-0" />
+                    <h4 className="text-lg sm:text-xl font-bold text-[#282828] font-['Dosis',sans-serif] uppercase tracking-wide">
+                      INOVA Unidade Campolim
+                    </h4>
+                  </div>
+                  <h5 className="text-sm sm:text-base font-bold text-[#541E87] mb-2 font-['Dosis',sans-serif] uppercase">
+                    &gt; Clínica de Vacinas e Especialidades
+                  </h5>
+                  <p className="text-[#54595F] text-sm sm:text-base leading-relaxed text-justify">
+                    A 1ª clínica veterinária de Sorocaba especializada em vacinas, consultórios para atendimento de consultas de rotina com Clínico Geral e Especialidades, exames de ultrassom, exames cardiológicos, centro de reabilitação e muito mais.
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Right Column: Video & Image Carousel */}
-            <div className="lg:col-span-6 space-y-8">
+            <div className="lg:col-span-6 space-y-6">
               {/* YouTube Video Player */}
-              <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md bg-black">
+              <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-md bg-black border border-slate-200/80">
                 <iframe
                   src="https://www.youtube.com/embed/1Bj6N_XLl30"
                   title="Inova Hospital Veterinário 24h"
@@ -163,7 +173,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
               </div>
 
               {/* Image Carousel */}
-              <div className="relative w-full rounded-lg overflow-hidden shadow-md bg-slate-100 group">
+              <div className="relative w-full rounded-2xl overflow-hidden shadow-md bg-slate-100 group border border-slate-200/80">
                 <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] overflow-hidden">
                   {CAROUSEL_IMAGES.map((img, idx) => (
                     <div
@@ -219,6 +229,44 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
               </div>
             </div>
           </div>
+
+          {/* Linha do Tempo / Atualização do Layout */}
+          <div className="mt-16 pt-12 border-t border-slate-200/80">
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#541E87] bg-purple-50 px-3 py-1 rounded-full inline-block mb-2 font-['Dosis',sans-serif]">
+                Evolução e Marcos Históricos
+              </span>
+              <h3 className="font-['Dosis',sans-serif] font-bold text-2xl sm:text-3xl lg:text-4xl text-[#282828] uppercase tracking-wide">
+                Linha do Tempo
+              </h3>
+              <p className="text-slate-600 text-sm sm:text-base mt-2">
+                Conheça a trajetória de crescimento, inovação e excelência da INOVA
+              </p>
+            </div>
+
+            {/* Modern Timeline Cards Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+              {TIMELINE_EVENTS.map((event, index) => (
+                <div
+                  key={event.year}
+                  className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/90 shadow-xs hover:border-[#541E87]/40 hover:shadow-md transition-all flex flex-col justify-between group relative overflow-hidden"
+                >
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-purple-50 rounded-bl-full -z-0 opacity-50 group-hover:bg-[#FAAE00]/15 transition-colors" />
+                  <div className="relative z-10 flex items-center justify-between gap-3 mb-3">
+                    <span className="bg-gradient-to-r from-[#541E87] to-[#3B1260] text-[#FAAE00] font-['Dosis',sans-serif] font-bold text-lg px-4 py-1.5 rounded-xl shadow-xs group-hover:scale-105 transition-transform">
+                      {event.year}
+                    </span>
+                    <span className="text-xs text-slate-400 font-bold">
+                      #{String(index + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+                  <p className="relative z-10 text-slate-800 font-semibold text-sm sm:text-base leading-snug">
+                    {event.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* Section 3: Banner "Nossos valores guiam nossas ações" */}
@@ -269,10 +317,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
             Enfermagem e Auxiliar Veterinário
           </h2>
           <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
-            Nossa equipe de enfermagem e auxiliar veterinário é altamente capacitada para dar
-            apoio nos setores de Internação, Centro Cirúrgico, Laboratório e Exames de Imagem.
-            Além disso, estão à frente do nosso Ambulatório Central, trazendo mais agilidade e
-            conforto nas coletas, aplicações e curativos mais rotineiros.
+            Nossa equipe de enfermagem é composta por auxiliares veterinários altamente capacitados para dar apoio aos nosso corpo clínico dentro dos consultórios e também nos setores de Internação, Centro Cirúrgico e Exames de Imagem. Além disso, estão à frente do nosso Ambulatório Central, trazendo mais agilidade e conforto nas coletas, aplicações e curativos mais rotineiros.
           </p>
         </section>
 
@@ -282,9 +327,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
             Laboratório
           </h2>
           <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
-            Em nosso laboratório, contamos a equipe de análises clínicas focada em laudar os exames
-            bioquímicos dos nossos pacientes, oferecendo um maior conforto e velocidade ao entregar
-            os resultados.
+            A equipe de laboratório é composta por veterinários patologistas e analistas clínicos focada em laudar os exames bioquímicos dos nossos pacientes, oferecendo um maior conforto e velocidade ao entregar os resultados.
+          </p>
+        </section>
+
+        {/* Section 8.5: Farmácia Central */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-10 text-left">
+          <h2 className="font-['Dosis',sans-serif] text-2xl sm:text-3xl font-bold text-[#541E87] mb-4 text-left">
+            Farmácia Central
+          </h2>
+          <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
+            Para garantir agilidade e suporte ao tratamento dos nossos pacientes internados, contamos com uma equipe de farmácia 24 horas, para medicação e conformidade de tratamentos.
           </p>
         </section>
 
@@ -295,16 +348,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
           </h2>
           <div className="space-y-4 text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
             <p className="text-justify text-left">
-              Nosso time de estagiários tem como objetivo auxiliar na rotina geral do Hospital e
-              da Clínica, interagindo com os mais diversos profissionais da área de Medicina
-              Veterinária e contribuindo para uma melhor experiência do tutor e seu pet.
+              Nosso time de estagiários tem como objetivo auxiliar na rotina geral do Hospital e da Clínica, interagindo com os mais diversos profissionais da área de Medicina Veterinária e contribuindo para uma melhor experiência da família e seu pet.
             </p>
             <p className="text-justify text-left">
-              O estágio contribui para a formação dos alunos, que têm a oportunidade de colocar em
-              prática o aprendizado teórico da sala de aula sob a supervisão técnica e profissional
-              de uma equipe de destaque. Toda essa vivência na prática agrega maiores
-              conhecimentos sobre a profissão e auxilia na escolha da área que desejam seguir no
-              futuro.
+              O estágio contribui para a formação dos estudantes, que têm a oportunidade de colocar em prática o aprendizado teórico da sala de aula sob a supervisão técnica e profissional de uma equipe de destaque. Toda essa vivência na prática agrega maiores conhecimentos sobre a profissão e auxilia na escolha da área que desejam seguir no futuro.
             </p>
           </div>
         </section>
@@ -315,9 +362,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
             Organização e limpeza
           </h2>
           <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
-            Para garantir um ambiente sempre agradável, nossa equipe de organização e limpeza está
-            presente em nossa Clínica e Hospital todos os dias, mantendo as nossas Recepções,
-            Consultórios, Internação, Centro Cirúrgico e todos os ambientes sempre impecáveis.
+            Para garantir um ambiente seguro e sempre agradável, nossa equipe de organização e limpeza está presente em nossa Clínica e Hospital todos os dias, mantendo as nossas Recepções, Consultórios, Internação, Centro Cirúrgico e todos os ambientes sempre impecáveis.
           </p>
         </section>
 
@@ -327,9 +372,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBackToHome }) => {
             Administrativo
           </h2>
           <p className="text-[#7A7A7A] leading-relaxed text-base font-normal text-justify text-left">
-            Nossa equipe administrativa está presente em nosso Hospital e Clínica, dando suporte a
-            todos os departamentos, sendo responsáveis por Compras, Manutenção, Financeiro,
-            Recursos Humanos, Comunicação e Estoque.
+            Nossa equipe administrativa está presente em nosso Hospital e Clínica, dando suporte a todos os departamentos, sendo responsáveis por Compras, Manutenção, Financeiro, Estoque, Recursos Humanos, Estratégico, Marketing e Comunicação.
           </p>
         </section>
       </div>
