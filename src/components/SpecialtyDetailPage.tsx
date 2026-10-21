@@ -59,9 +59,6 @@ export const SpecialtyDetailPage: React.FC<SpecialtyDetailPageProps> = ({
       .replace(/<ul[^>]*class="[^"]*elementor-icon-list-items[^"]*"[\s\S]*?<\/ul>/gi, '')
       .replace(/<link\s+[^>]*>/gi, '')
       .replace(/<style[\s\S]*?<\/style>/gi, '')
-      // Remove team listings, leaders, and CRMVs (kept exclusively on /vets)
-      .replace(/(?:<div style=[^>]*class="wp-block-spacer"[^>]*><\/div>\s*)?<h[234][^>]*>(?:<mark[^>]*>)?(?:<strong>)*(?:Conheça nossa equipe|Equipe|Veterinária[s]?\s+Responsável|Diretora\s+Clínica\s+Responsável|Líder\s+Técnica).*?<\/h[234]>\s*(?:<h3[^>]*>Veterinárias Responsáveis<\/h3>\s*)?(?:(?!<h[1234]|<figure|<div\s+role|<div\s+class="wp-block-columns|<div\s+class="wp-block-button|<div\s+class="wp-block-buttons).)*?(?=<\/div>\s*$|<h[1234]|<figure|<div\s+role|<div\s+class="wp-block-columns|<div\s+class="wp-block-button|<div\s+class="wp-block-buttons|$)/gis, '')
-      .replace(/<p[^>]*>(?:<strong>)*(?:Veterinária[s]?\s+Responsável:|Equipe\s+de\s+).*?<\/p>(?:(?!<h[1234]|<figure|<div\s+role|<div\s+class="wp-block-columns|<div\s+class="wp-block-button|<div\s+class="wp-block-buttons|<div>\s*<p>Consultas agendadas).)*?(?=<\/div>\s*$|<h[1234]|<figure|<div\s+role|<div\s+class="wp-block-columns|<div\s+class="wp-block-button|<div\s+class="wp-block-buttons|<div>\s*<p>Consultas agendadas|$)/gis, '')
       .trim();
 
     return cleaned
