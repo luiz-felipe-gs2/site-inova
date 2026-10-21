@@ -88,7 +88,7 @@ const SEARCH_DATABASE = [
     action: 'service:espaco-de-reabilitacao',
   },
   {
-    title: 'Exame Cardiológico em Cães e Gatos',
+    title: 'Exames Cardiológicos em Cães e Gatos',
     category: 'Serviços',
     desc: 'Eletrocardiografia, ecocardiograma, aferição de pressão arterial e avaliação de risco cirúrgico.',
     action: 'service:exame-cardiologico-cachorro',
