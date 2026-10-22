@@ -106,7 +106,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
       question: 'Como funciona o Pronto Atendimento e Emergência?',
       answer: (
         <p className="text-sm text-slate-600 leading-relaxed">
-          Nosso hospital funciona 24h para Pronto Atendimento e Emergência, contando sempre com um médico veterinário Clínico Geral de plantão e apoio de enfermeiros veterinários para procedimentos. O atendimento é feito por ordem de chegada, mas em casos de extrema emergência o pet é levado imediatamente para os primeiros socorros na internação/UTI.
+          Nosso hospital funciona 24h para Pronto Atendimento e Emergência, contamos sempre com médicos-veterinários Clínico Geral de plantão e apoio de auxiliares veterinários nos atendimentos. O atendimento é feito por ordem de chegada, mas em casos extremos, o pet é levado imediatamente para os primeiros socorros para nossa equipe de Emergencistas Veterinários, com uma sala estruturada e equipada para o melhor suporte do pet. Além disso, contamos com Anestesistas e Cirurgiões de sobreaviso em casos de emergências cirúrgicas.
         </p>
       ),
     },
