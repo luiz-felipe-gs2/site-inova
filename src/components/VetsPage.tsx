@@ -213,7 +213,7 @@ export const VetsPage: React.FC<VetsPageProps> = ({
                       alt={vet.name}
                       loading="lazy"
                       referrerPolicy="no-referrer"
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-contain rounded-xl"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src =
                           'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600';
@@ -325,7 +325,7 @@ export const VetsPage: React.FC<VetsPageProps> = ({
                     src={selectedVet.image}
                     alt={selectedVet.name}
                     referrerPolicy="no-referrer"
-                    className="w-32 h-32 sm:w-36 sm:h-36 object-contain shrink-0"
+                    className="w-32 h-32 sm:w-36 sm:h-36 object-contain rounded-xl shrink-0"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src =
                         'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600';
@@ -374,9 +374,14 @@ export const VetsPage: React.FC<VetsPageProps> = ({
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-sm text-slate-600 bg-[#FAF9F6] p-4 rounded-lg border border-slate-100">
-                    Médico(a) veterinário(a) integrante do corpo clínico especializado. Registro ativo sob {selectedVet.crmv}.
-                  </p>
+                  <ul className="space-y-2.5">
+                    <li className="text-xs sm:text-sm text-slate-700 leading-relaxed flex items-start gap-2 bg-[#FAF9F6] p-3 rounded-lg border border-slate-100">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#E5A823] mt-2 shrink-0" />
+                      <span>
+                        Médico(a) veterinário(a) integrante do corpo clínico especializado. Registro ativo sob {selectedVet.crmv}.
+                      </span>
+                    </li>
+                  </ul>
                 )}
               </div>
             </div>
