@@ -285,6 +285,15 @@ export const VetsPage: React.FC<VetsPageProps> = ({
             </button>
           </div>
         )}
+
+        <div className="mt-10 flex justify-center">
+          <a
+            href="http://www.google.com/"
+            className="inline-flex items-center justify-center bg-[#541E87] hover:bg-[#A400EB] text-white font-semibold text-sm px-6 py-3 rounded-lg transition-colors shadow-sm"
+          >
+            Faça parte da equipe
+          </a>
+        </div>
       </div>
 
       {/* Pop-up Modal com imagem e informações completas do Vet */}
