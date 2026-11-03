@@ -359,27 +359,24 @@ export const BloodBankPage: React.FC<BloodBankPageProps> = ({ onBackToHome }) =>
           </div>
         </section>
 
+        {/* Cadastro de doador */}
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 my-8 text-center">
+          <a
+            href="https://www.google.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-3 text-base sm:text-lg font-bold text-white shadow-md transition-colors hover:bg-red-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+          >
+            Quero que o meu pet seja doador!
+          </a>
+        </section>
+
         {/* Faixa e Seção: #MEUPETHERÓI | CADASTRE SEU PET PARA SALVAR VIDAS */}
         <section className="bg-[#541E87] py-8 my-10 shadow-xs">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-xl sm:text-2xl font-bold uppercase tracking-wider text-white">
               #MEUPETHERÓI | CADASTRE SEU PET PARA SALVAR VIDAS
             </h2>
-          </div>
-        </section>
-
-        {/* Formulário Google Forms */}
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 my-8 text-center">
-          <div className="w-full rounded-2xl overflow-hidden shadow-md border border-slate-200/80 bg-white">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLScKnEzu4O6k5qSmvIEs7wkCtBP7jHR9PIdzSxls507wcrkfJA/viewform?embedded=true"
-              title="Cadastro de Doador - Banco de Sangue Inova"
-              width="100%"
-              height="1000"
-              className="w-full min-h-[960px] border-0"
-            >
-              Carregando…
-            </iframe>
           </div>
         </section>
       </div>
