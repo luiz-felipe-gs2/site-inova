@@ -23,24 +23,36 @@ const TIMELINE_EVENTS = [
 
 const CAROUSEL_IMAGES = [
   {
-    url: 'https://inovaveterinaria.com.br/wp-content/uploads/2020/11/5.png',
-    alt: '5',
+    url: '/images/about-carousel/1.webp',
+    alt: 'Carrossel Inova 1',
   },
   {
-    url: 'https://inovaveterinaria.com.br/wp-content/uploads/2020/11/6.png',
-    alt: '6',
+    url: '/images/about-carousel/2.webp',
+    alt: 'Carrossel Inova 2',
   },
   {
-    url: 'https://inovaveterinaria.com.br/wp-content/uploads/2020/11/7.png',
-    alt: '7',
+    url: '/images/about-carousel/3.webp',
+    alt: 'Carrossel Inova 3',
   },
   {
-    url: 'https://inovaveterinaria.com.br/wp-content/uploads/2020/11/8.png',
-    alt: '8',
+    url: '/images/about-carousel/4.webp',
+    alt: 'Carrossel Inova 4',
   },
   {
-    url: 'https://inovaveterinaria.com.br/wp-content/uploads/2020/11/10.png',
-    alt: '10',
+    url: '/images/about-carousel/5.webp',
+    alt: 'Carrossel Inova 5',
+  },
+  {
+    url: '/images/about-carousel/6.webp',
+    alt: 'Carrossel Inova 6',
+  },
+  {
+    url: '/images/about-carousel/7.webp',
+    alt: 'Carrossel Inova 7',
+  },
+  {
+    url: '/images/about-carousel/8.webp',
+    alt: 'Carrossel Inova 8',
   },
 ];
 

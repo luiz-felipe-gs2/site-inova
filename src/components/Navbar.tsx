@@ -127,7 +127,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Medium Screens (lg) Compact Navigation */}
           <div className="hidden lg:flex xl:hidden flex-1 items-center justify-evenly mx-2">
-            <div className="flex items-center space-x-2 font-['Dosis',sans-serif] font-[300] text-[14px] text-[#282828] uppercase">
+            <div className={`${mobileMenuOpen ? 'hidden' : 'flex'} items-center space-x-2 font-['Dosis',sans-serif] font-[300] text-[14px] text-[#282828] uppercase`}>
               <a href="#sobre" onClick={(e) => handleItemClick(e, '#sobre')} className={`px-2.5 py-1.5 transition-colors ${activeSection === 'sobre' ? 'bg-[#282828] text-white' : 'hover:bg-[#282828] hover:text-white'}`}>A INOVA</a>
               <a href="#vets" onClick={(e) => handleItemClick(e, '#vets')} className={`px-2.5 py-1.5 transition-colors ${activeSection === 'vets' ? 'bg-[#282828] text-white' : 'hover:bg-[#282828] hover:text-white'}`}>VETS</a>
               <a href="#servicos" onClick={(e) => handleItemClick(e, '#servicos')} className="px-2.5 py-1.5 hover:bg-[#282828] hover:text-white transition-colors">SERVIÇOS</a>
@@ -148,8 +148,11 @@ export const Navbar: React.FC<NavbarProps> = ({
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 text-[#282828] hover:text-[#541E87]"
+              aria-label={mobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation-dropdown"
             >
-              <Menu className="w-6 h-6" />
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
 
@@ -170,6 +173,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg text-[#282828] hover:text-[#541E87] hover:bg-slate-100 transition-colors"
               aria-label={mobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation-dropdown"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -181,7 +186,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       {mobileMenuOpen && (
         <div
           id="mobile-navigation-dropdown"
-          className="lg:hidden bg-white border-b border-slate-200 px-5 py-4 shadow-xl animate-in slide-in-from-top-2 duration-200"
+          className="xl:hidden bg-white border-b border-slate-200 px-5 py-4 shadow-xl animate-in slide-in-from-top-2 duration-200"
         >
           <div className="flex flex-col space-y-2.5">
             {NAV_ITEMS.map((item) => (
